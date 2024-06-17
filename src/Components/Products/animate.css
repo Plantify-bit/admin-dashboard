@@ -1,0 +1,14 @@
+#AnimatedMenu{
+    animation: zoom-in 0.2s ease-in-out;;
+    animation-iteration-count: 1;
+}
+@keyframes zoom-in {
+    from {
+        transform: scale(0.5); /* Start at 90% scale */
+        opacity: 0; /* Start invisible */
+    }
+    to {
+        transform: scale(1); /* End at 100% scale (original size) */
+        opacity: 1; /* End fully visible */
+    }
+}
