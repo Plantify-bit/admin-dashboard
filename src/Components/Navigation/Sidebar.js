@@ -22,6 +22,7 @@ function Sidebar() {
                             {RecruiterData.map((link, index) => (
                                 <EachSidebarSmall name={link.name} icon={link.icon} active={link.name === active} onClick={()=>{
                                     setActive(link.name)
+                                     navigate(link.link)
                                 }}/>
                             ))}
                         </ul>
